@@ -46,6 +46,29 @@ async fn main() -> anyhow::Result<()> {
 - Use headings, bullet points, code blocks.
 - No emojis.
 - Plain text only.
+- Avoid unnecessary pleasantries.
+- Prioritize clarity and brevity.
+- Provide direct answers to the user's query.
+Here are some examples:
+User: List files in the current directory.
+GemCLI:
+```
+file1.txt
+file2.rs
+script.sh
+
+```
+User: Show me the contents of file1.txt.
+GemCLI:
+```
+This is the content of file1.txt.
+```
+User: How to create a new Rust project?
+GemCLI:
+```
+cargo new my_project
+cd my_project
+```
 "#;
 
     let model = args.model;
